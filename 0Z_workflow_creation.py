@@ -109,11 +109,11 @@ job_config = {
         "git_branch": "main",
     },
     "parameters": [
-        {"name": "catalog", "default": "dbdemos"},
-        {"name": "customer_name", "default": "newco"},
+        {"name": "catalog", "default": f"{catalog}"},
+        {"name": "customer_name", "default": f"{customer_name}"},
         {
             "name": "pdf_link",
-            "default": "https://content.cdntwrk.com/files/aT0xMzkwNjczJnY9MiZpc3N1ZU5hbWU9dGhlLWZpdmV0cmFuLXByb3RvY29sLWVib29rJmNtZD1kJnNpZz0yOTQ3NzFhNmZhMDBjMzQyOWVhMmJjNDhjYmQ5Mzk2Yw%253D%253D",
+            "default": f"{pdf_link}",
         },
         {"name": "skip_setup", "default": "false"},
     ],
@@ -136,6 +136,10 @@ j = w.jobs.create(
 
 # COMMAND ----------
 
-# delete job
+# # delete job
 # job_id = [i for i in w.jobs.list(name=f"({username}) mfg_llm_demo")][0].job_id
 # w.jobs.delete(job_id=job_id)
+
+# COMMAND ----------
+
+
