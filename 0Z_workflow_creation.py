@@ -104,7 +104,7 @@ job_config = {
         },
     ],
     "git_source": {
-        "git_url": "https://github.com/rohit-kg/dbrx-simple-llm-demo/",
+        "git_url": "https://github.com/pmracek/dbrx-simple-llm-demo",
         "git_provider": "gitHub",
         "git_branch": "main",
     },
